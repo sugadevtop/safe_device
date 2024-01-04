@@ -20,7 +20,14 @@ public class GreaterThan23 implements CheckApiVersion {
                 "/data/local/bin/su",
                 "/system/sd/xbin/su",
                 "/system/bin/failsafe/su",
-                "/data/local/su"};
+                "/data/local/su"
+                "/system/su"
+                "/system/bin/ext/su"
+                "/system/usr/su-backup"
+                "/app/Superuser.apk"
+                "/system/app/su.apk"
+                "/system/app/Spapasu.apk"
+            };
         for (String path : paths) {
             if (new File(path).exists()) return true;
         }
